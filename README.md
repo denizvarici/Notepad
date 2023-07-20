@@ -1,2 +1,4 @@
 # Notepad
-Notepad app where you can write your notes and hold them on secure.
+Copyright © Deniz Varıcı 2023
+
+This project and its source code are protected by copyright. Unauthorized usage is prohibited.
