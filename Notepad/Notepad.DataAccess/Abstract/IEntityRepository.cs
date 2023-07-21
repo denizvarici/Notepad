@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Notepad.DataAccess.Abstract
 {
-    interface IEntityRepository<T>
+    public interface IEntityRepository<T>
     {
         List<T> GetAll(Expression<Func<T,bool>> filter = null);
         T Get(Expression<Func<T,bool>> filter);

@@ -7,7 +7,8 @@ using Notepad.Entities.Concrete;
 
 namespace Notepad.DataAccess.Abstract
 {
-    interface INoteDal:IEntityRepository<Note>
+    public interface INoteDal:IEntityRepository<Note>
     {
+        bool ControlScriptName(Note note);
     }
 }

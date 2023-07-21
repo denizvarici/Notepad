@@ -11,5 +11,6 @@ namespace Notepad.Entities.Concrete
     {
         public int Id { get; set; }
         public string Script { get; set; }
+        public string ScriptName { get; set; }
     }
 }

@@ -10,6 +10,19 @@ namespace Notepad.DataAccess.Concrete.EntityFramework
 {
     public class EfNoteDal:EfEntityRepositoryBase<Note,NotepadContext>,INoteDal
     {
-
+        public bool ControlScriptName(Note note)
+        {
+            using (NotepadContext context = new NotepadContext())
+            {
+                if (context.Notes.Any(n => n.ScriptName == note.ScriptName))
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+        }
     }
 }
