@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NotepadNewScriptForm));
             this.richTbxTheNote = new System.Windows.Forms.RichTextBox();
             this.btnSaveNote = new System.Windows.Forms.Button();
             this.lblNoteName = new System.Windows.Forms.Label();
             this.tbxNoteName = new System.Windows.Forms.TextBox();
+            this.lblMe = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // richTbxTheNote
@@ -50,12 +52,13 @@
             // btnSaveNote
             // 
             this.btnSaveNote.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSaveNote.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(255)))), ((int)(((byte)(247)))));
             this.btnSaveNote.Location = new System.Drawing.Point(964, 453);
             this.btnSaveNote.Name = "btnSaveNote";
             this.btnSaveNote.Size = new System.Drawing.Size(118, 41);
             this.btnSaveNote.TabIndex = 1;
             this.btnSaveNote.Text = "Save";
-            this.btnSaveNote.UseVisualStyleBackColor = true;
+            this.btnSaveNote.UseVisualStyleBackColor = false;
             this.btnSaveNote.Click += new System.EventHandler(this.btnSaveNote_Click);
             // 
             // lblNoteName
@@ -76,16 +79,29 @@
             this.tbxNoteName.Size = new System.Drawing.Size(227, 25);
             this.tbxNoteName.TabIndex = 3;
             // 
+            // lblMe
+            // 
+            this.lblMe.AutoSize = true;
+            this.lblMe.Font = new System.Drawing.Font("Lucida Console", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblMe.Location = new System.Drawing.Point(13, 484);
+            this.lblMe.Name = "lblMe";
+            this.lblMe.Size = new System.Drawing.Size(103, 13);
+            this.lblMe.TabIndex = 4;
+            this.lblMe.Text = "Deniz Varıcı";
+            // 
             // NotepadNewScriptForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1100, 506);
+            this.Controls.Add(this.lblMe);
             this.Controls.Add(this.tbxNoteName);
             this.Controls.Add(this.lblNoteName);
             this.Controls.Add(this.btnSaveNote);
             this.Controls.Add(this.richTbxTheNote);
             this.Font = new System.Drawing.Font("Lucida Console", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "NotepadNewScriptForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
@@ -103,5 +119,6 @@
         private System.Windows.Forms.Button btnSaveNote;
         private System.Windows.Forms.Label lblNoteName;
         private System.Windows.Forms.TextBox tbxNoteName;
+        private System.Windows.Forms.Label lblMe;
     }
 }

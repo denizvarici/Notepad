@@ -51,13 +51,15 @@ namespace Notepad.UI
                         ScriptName = tbxNoteName.Text,
                         Script = richTbxTheNote.Text
                     });
-                    MessageBox.Show("Saved by update!");
+                    MessageBox.Show("Saved successfully!","Save completed",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    this.Hide();
                 }
                 catch (Exception exception)
                 {
                     //MessageBox.Show(exception.Message);
                     tbxNoteName.BackColor = Color.Red;
-                    MessageBox.Show("Please Enter a Note name");
+                    MessageBox.Show("Please Enter a Note name","Note name not entered",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                    
                 }
 
             }
@@ -70,13 +72,14 @@ namespace Notepad.UI
                         ScriptName = tbxNoteName.Text,
                         Script = richTbxTheNote.Text
                     });
-                    MessageBox.Show("Saved by added!");
+                    MessageBox.Show("Saved successfully!", "Save completed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Hide();
                 }
                 catch (Exception exception)
                 {
                     //MessageBox.Show(exception.Message);
                     tbxNoteName.BackColor = Color.Red;
-                    MessageBox.Show("Please Enter a Note name");
+                    MessageBox.Show("Please Enter a Note name", "Note name not entered", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
 

@@ -54,26 +54,37 @@ namespace Notepad.UI
             }
             else
             {
-                MessageBox.Show("There isn't a list selected to open");
+                MessageBox.Show("There isn't a list selected to open","Note not selected",MessageBoxButtons.OK,MessageBoxIcon.Warning);
             }
             
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            try
+            DialogResult dialogResult = MessageBox.Show("Are you sure you want to delete '"+((Note)lstbxNoteList.SelectedItem).ScriptName+"'?","Delete Note",MessageBoxButtons.YesNo);
+
+            if (dialogResult == DialogResult.Yes)
             {
-                _noteService.Delete(new Note
+                try
                 {
-                    Id = (int)lstbxNoteList.SelectedValue
-                });
-                MessageBox.Show("Deleted Successfully!");
+                    _noteService.Delete(new Note
+                    {
+                        Id = (int)lstbxNoteList.SelectedValue
+                    });
+                    MessageBox.Show("Deleted Successfully!","Delete Successfull",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                }
+                catch (Exception exception)
+                {
+                    MessageBox.Show(exception.Message);
+
+                }
+                LoadNoteList();
             }
-            catch (Exception exception)
+            else
             {
-                MessageBox.Show(exception.Message);
+
             }
-            LoadNoteList();
+            
         }
 
         private void NotepadMainForm_Resize(object sender, EventArgs e)
