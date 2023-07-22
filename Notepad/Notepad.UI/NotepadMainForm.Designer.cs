@@ -73,6 +73,8 @@
             this.lstbxNoteList.Name = "lstbxNoteList";
             this.lstbxNoteList.Size = new System.Drawing.Size(175, 310);
             this.lstbxNoteList.TabIndex = 4;
+//            this.lstbxNoteList.DoubleClick += new System.EventHandler(this.lstbxNoteList_DoubleClick);
+//            this.lstbxNoteList.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lstbxNoteList_MouseDoubleClick);
             // 
             // btnDelete
             // 
@@ -105,7 +107,7 @@
             this.lblMe.Font = new System.Drawing.Font("Lucida Console", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblMe.Location = new System.Drawing.Point(12, 549);
             this.lblMe.Name = "lblMe";
-            this.lblMe.Size = new System.Drawing.Size(103, 13);
+            this.lblMe.Size = new System.Drawing.Size(89, 12);
             this.lblMe.TabIndex = 8;
             this.lblMe.Text = "Deniz Varıcı";
             // 

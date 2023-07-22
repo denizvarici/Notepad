@@ -54,36 +54,44 @@ namespace Notepad.UI
             }
             else
             {
-                MessageBox.Show("There isn't a list selected to open","Note not selected",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                MessageBox.Show("There isn't a note selected to open","Note not selected",MessageBoxButtons.OK,MessageBoxIcon.Warning);
             }
             
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            DialogResult dialogResult = MessageBox.Show("Are you sure you want to delete '"+((Note)lstbxNoteList.SelectedItem).ScriptName+"'?","Delete Note",MessageBoxButtons.YesNo);
-
-            if (dialogResult == DialogResult.Yes)
+            if (lstbxNoteList.SelectedValue != null)
             {
-                try
+                DialogResult dialogResult = MessageBox.Show("Are you sure you want to delete '" + ((Note)lstbxNoteList.SelectedItem).ScriptName + "'?", "Delete Note", MessageBoxButtons.YesNo);
+
+                if (dialogResult == DialogResult.Yes)
                 {
-                    _noteService.Delete(new Note
+                    try
                     {
-                        Id = (int)lstbxNoteList.SelectedValue
-                    });
-                    MessageBox.Show("Deleted Successfully!","Delete Successfull",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                        _noteService.Delete(new Note
+                        {
+                            Id = (int)lstbxNoteList.SelectedValue
+                        });
+                        MessageBox.Show("Deleted Successfully!", "Delete Successfull", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch (Exception exception)
+                    {
+                        MessageBox.Show(exception.Message);
+
+                    }
+                    LoadNoteList();
                 }
-                catch (Exception exception)
+                else
                 {
-                    MessageBox.Show(exception.Message);
 
                 }
-                LoadNoteList();
             }
             else
             {
-
+                MessageBox.Show("There isn't a note selected to delete", "Note not selected", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+            
             
         }
 
@@ -97,5 +105,9 @@ namespace Notepad.UI
             NotepadNewScriptForm notepadNewScriptForm = new NotepadNewScriptForm("", "", -5);
             notepadNewScriptForm.Show();
         }
+
+        
+
+        
     }
 }
