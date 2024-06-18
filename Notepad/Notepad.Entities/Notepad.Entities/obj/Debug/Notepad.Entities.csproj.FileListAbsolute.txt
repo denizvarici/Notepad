@@ -1,6 +1,6 @@
 R:\GITHUB\Notepad\Notepad\Notepad.Entities\Notepad.Entities\bin\Debug\Notepad.Entities.dll
 R:\GITHUB\Notepad\Notepad\Notepad.Entities\Notepad.Entities\bin\Debug\Notepad.Entities.pdb
-R:\GITHUB\Notepad\Notepad\Notepad.Entities\Notepad.Entities\obj\Debug\Notepad.Entities.csprojAssemblyReference.cache
 R:\GITHUB\Notepad\Notepad\Notepad.Entities\Notepad.Entities\obj\Debug\Notepad.Entities.csproj.CoreCompileInputs.cache
 R:\GITHUB\Notepad\Notepad\Notepad.Entities\Notepad.Entities\obj\Debug\Notepad.Entities.dll
 R:\GITHUB\Notepad\Notepad\Notepad.Entities\Notepad.Entities\obj\Debug\Notepad.Entities.pdb
+R:\GITHUB\Notepad\Notepad\Notepad.Entities\Notepad.Entities\obj\Debug\Notepad.Entities.csprojAssemblyReference.cache

@@ -1,0 +1,15 @@
+R:\GITHUB\Notepad\Notepad\Notepad.UI.WPF\bin\Debug\Notepad.UI.WPF.exe.config
+R:\GITHUB\Notepad\Notepad\Notepad.UI.WPF\bin\Debug\Notepad.UI.WPF.exe
+R:\GITHUB\Notepad\Notepad\Notepad.UI.WPF\bin\Debug\Notepad.UI.WPF.pdb
+R:\GITHUB\Notepad\Notepad\Notepad.UI.WPF\obj\Debug\Notepad.UI.WPF.csprojAssemblyReference.cache
+R:\GITHUB\Notepad\Notepad\Notepad.UI.WPF\obj\Debug\MainWindow.g.cs
+R:\GITHUB\Notepad\Notepad\Notepad.UI.WPF\obj\Debug\App.g.cs
+R:\GITHUB\Notepad\Notepad\Notepad.UI.WPF\obj\Debug\Notepad.UI.WPF_MarkupCompile.cache
+R:\GITHUB\Notepad\Notepad\Notepad.UI.WPF\obj\Debug\Notepad.UI.WPF_MarkupCompile.lref
+R:\GITHUB\Notepad\Notepad\Notepad.UI.WPF\obj\Debug\MainWindow.baml
+R:\GITHUB\Notepad\Notepad\Notepad.UI.WPF\obj\Debug\Notepad.UI.WPF.g.resources
+R:\GITHUB\Notepad\Notepad\Notepad.UI.WPF\obj\Debug\Notepad.UI.WPF.Properties.Resources.resources
+R:\GITHUB\Notepad\Notepad\Notepad.UI.WPF\obj\Debug\Notepad.UI.WPF.csproj.GenerateResource.cache
+R:\GITHUB\Notepad\Notepad\Notepad.UI.WPF\obj\Debug\Notepad.UI.WPF.csproj.CoreCompileInputs.cache
+R:\GITHUB\Notepad\Notepad\Notepad.UI.WPF\obj\Debug\Notepad.UI.WPF.exe
+R:\GITHUB\Notepad\Notepad\Notepad.UI.WPF\obj\Debug\Notepad.UI.WPF.pdb
